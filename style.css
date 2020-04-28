@@ -1,0 +1,14 @@
+header {
+    color: #fff;
+}
+.dark { 
+    background-color: #000;
+    
+}
+.t-light {
+    color: #fff;
+}
+.img {
+    width: 200px;
+    height: 200px
+}
