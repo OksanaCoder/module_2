@@ -8,11 +8,19 @@ header {
 .t-light {
     color: #fff;
 }
+
+/* change width and height of img! to make it responsive*/
 .img {
-    width: 200px;
-    height: 200px
+    width: 100%;
+    width: 100%;
 }
 h6 {
     color: #000;
     font-size: 12px;
+}
+/* .brown {
+    background-color: #E1BBB3;
+} */
+.space {
+    margin: 50px auto;
 }
