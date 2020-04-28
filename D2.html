@@ -8,6 +8,7 @@
     <title>My music</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <style>
   
             /*For all Albums we'd like to have a consistent style.
@@ -50,10 +51,13 @@
                 <img class="d-block w-100" src="img/cover.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="img/cover.jpg" alt="Second slide">
+                <img class="d-block w-100" src="img/cover2.jpg" alt="Second slide">
+                <div class="carousel-caption">
+                    <h6 class="h6-responsive"></h6>
+                </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="img/cover.jpg" alt="Third slide">
+                <img class="d-block w-100" src="img/cover3.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -334,12 +338,58 @@
         </div>
     </div>
 </section>
-<!-- <div class="container-fluid faveAlbum">
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-5">
 
-</div>
-<div class="container-fluid faveSinger">
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1 numOfAlbums">Number of albums on current page:</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="output"></a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+  
+ <div style="background-color: #000;">
+    <div class="container" style="color: aliceblue;">
+     <div class="row py-4 d-flex align-items-center">
+      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+        <h6 class="mb-0" style="color: aliceblue;">Get connected with us on social networks!</h6>
+      </div>
+      <!-- Grid column -->
 
-</div> -->
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+        <!-- Facebook -->
+        <a class="fb-ic text-light" href="#">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <!-- Twitter -->
+        <a class="tw-ic text-light" href="#">
+           <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <!--Instagram-->
+        <a class="ins-ic text-light" href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- Social buttons -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> My Music</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
 
     <!-- EXERCISE 5
@@ -355,18 +405,6 @@
         -->
 
 
-
-    <!-- EXERCISE 7
-            Do you have any musician / band you admire or you are fan of?
-            This section is dedicated to him / her / them!
-            Feel free to experiment in this part of the page.
-        -->
-
-    <!-- EXERCISE 8
-            Just covers!
-            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
-            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
-        -->
 
     <!-- EXERCISE 9
             Implement a footer with some information / social links
@@ -471,6 +509,13 @@
                 songBridges.pause();
             }
            });
+
+// num of albums on current page
+           let albs = document.querySelectorAll('.img');
+           let num = albs.length;
+           let output = document.querySelector('.output');
+           output.style.color = '#000';
+           output.innerText = num;
 
                 
 
