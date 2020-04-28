@@ -12,3 +12,7 @@ header {
     width: 200px;
     height: 200px
 }
+h6 {
+    color: #000;
+    font-size: 12px;
+}
