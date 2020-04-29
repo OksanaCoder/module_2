@@ -510,6 +510,22 @@
             }
            });
 
+//or 
+// const songIcons = document.querySelectorAll('i.fa');
+// songIcons.forEach(songIcon => {
+//   songIcon.addEventListener('click', (e) => {
+//     const icon = e.currentTarget;
+//     const songName = icon.classList[1];
+//     let song = new Audio();
+//     song.src = `audio/${songName}.mp3`;
+    
+//     song.paused ? song.play() : song.pause();
+    
+//     // the selected Song
+//     console.log(song);
+//   })
+// })
+
 // num of albums on current page
            let albs = document.querySelectorAll('.img');
            let num = albs.length;
